@@ -1,0 +1,38 @@
+
+.my-slick{
+    width: auto;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.8);
+    justify-content: flex-end;
+}
+.my-slick ol{
+    display: inline-flex;
+    width: 100%;
+    animation: cambio 80s infinite alternate linear;
+}
+
+.my-slick ol:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.my-slick li{
+    width: 100%;
+    list-style: none;
+    padding: 5px;
+}
+/*.slider li img{
+    background-color: aqua;
+    display: block;
+    align-content: center;
+}*/
+
+@keyframes cambio{
+    0%{margin-left: 5%;}
+    0%{margin-left: 5%;}
+    
+    25%{margin-left: -155%;}
+    45%{margin-left: -155%;}
+}
